@@ -4,6 +4,7 @@
 #define ScreenHeight getmaxy()
 #define GroundY ScreenHeight*1.75
 #define GroundX ScreenHeight*0.70
+*************Created By Syed Syab Ahmad Shah.*************
 void circle_loop(int x)
 {
     int i,rx,ry;
@@ -38,6 +39,7 @@ int main()
 		circle_loop(x);
 		for(int i=1;i<1900;i+=40)
 		{
+			*************Created By Syed Syab Ahmad Shah.*************
 			
 	   		circle(i,440,60);
 	   		floodfill(i,440,15);
@@ -68,5 +70,6 @@ int main()
 		
 		
 	}
+	*************Created By Syed Syab Ahmad Shah.*************
 	getch();
 }
