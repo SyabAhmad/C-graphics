@@ -1,0 +1,78 @@
+#include <graphics.h>
+#include <windows.h>
+#define ScreenHeight getmaxx()
+#define ScreenWidth getmaxy()
+#define  Yground ScreenHeight*2.75
+int loop()
+{
+
+		//arc(400,400,25,90,10);
+		while(1)
+		{
+			if(GetAsyncKeyState(VK_LBUTTON))
+			{
+				POINT pnt;
+            	GetCursorPos(&pnt);
+            	setcolor(6);
+           	 	ScreenToClient(GetForegroundWindow(), &pnt);
+           	 	for(int i=0;i<50;i+=5)
+           	 	{
+           	 		circle(pnt.x,pnt.y,20+i);
+           	 		delay(10);
+           	 		cleardevice();
+				}
+//           	 	circle(pnt.x,pnt.y,20);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,25);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,30);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,34);
+//           	 	delay(10);
+//				circle(pnt.x,pnt.y,40);
+//				delay(10);
+//				circle(pnt.x,pnt.y,45);
+				delay(10);
+				
+				
+			}
+			if(GetAsyncKeyState(VK_RBUTTON))
+			{
+				POINT pnt;
+            	GetCursorPos(&pnt);
+            	setcolor(14);
+           	 	ScreenToClient(GetForegroundWindow(), &pnt);
+           	 	for(int i=0;i<50;i+=5)
+           	 	{
+           	 		circle(pnt.x,pnt.y,20+i);
+           	 		delay(10);
+           	 		cleardevice();
+				}
+//           	 	circle(pnt.x,pnt.y,20);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,25);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,30);
+//           	 	delay(10);
+//           	 	circle(pnt.x,pnt.y,34);
+//           	 	delay(10);
+//				circle(pnt.x,pnt.y,40);
+//				delay(10);
+//				circle(pnt.x,pnt.y,45);
+//				delay(10);
+//				cleardevice();
+			}
+			delay(10);
+		}
+}
+int main()
+{
+	initwindow(800,800,"Line LOOP");
+	while(!kbhit())
+	{
+		loop();
+		delay(100);
+		cleardevice();
+	}
+	getch();
+}
