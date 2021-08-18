@@ -1,0 +1,249 @@
+#include <iostream>
+#include <graphics.h>
+#include <windows.h>
+#define ScreenWidth getmaxx()
+#define ScreenHeight getmaxy()
+#define YGround ScreenHeight*2.75
+int page2();
+int loop()
+{
+	int x=300;
+	setcolor(2);
+	line(0,50,800,50);
+	delay(x);
+	line(0,100,800,100);
+	delay(x);
+	setcolor(BLACK);
+	///A
+	line(70,50,100,100);
+	delay(x);
+	line(50,100,70,50);
+	delay(x);
+	line(60,80,85,80);
+	delay(x);
+	
+	///B
+	line(150,50,150,100);
+	delay(x);
+	arc(165,60,200,200,15);
+	delay(x);
+	arc(165,85,200,50,15);
+	delay(x);
+	
+	///c
+	arc(250,75,800,300,25);
+	delay(x);
+	
+	///D
+	line(320,50,320,100);
+	delay(x);
+	arc(330,75,-60,115,25);
+	delay(x);
+	
+	///E
+	line(430,50,430,100);
+	delay(x);
+	line(430,50,460,50);
+	delay(x);
+	line(430,75,460,75);
+	delay(x);
+	line(430,100,460,100);
+	delay(x);
+	
+	//f
+	line(530,50,530,100);
+	delay(x);
+	line(530,50,560,50);
+	delay(x);
+	line(530,75,560,75);
+	delay(x);
+	
+	///G
+	arc(650,75,800,300,25);
+	delay(x);
+	line(650,75,670,75);
+	delay(x);
+	line(660,75,660,100);
+	delay(x);
+	
+	///2nd line
+	setcolor(2);
+	delay(x+50);
+	line(0,150,800,150);
+	delay(x);
+	line(0,200,800,200);
+	////H
+	setcolor(BLACK);
+	line(50,150,50,200);
+	delay(x);
+	line(100,150,100,200);
+	delay(x);
+	line(50,175,100,175);
+	delay(x);
+	
+	///i
+	line(200,150,200,200);
+	delay(x);
+	
+	///j
+	line(300,150,300,180);
+	delay(x);
+	line(280,150,320,150);
+	delay(x);
+	arc(288,180,150,0,15);
+	delay(x);
+	
+	///K
+	line(400,150,400,200);
+	delay(x);
+	line(400,180,425,150);
+	delay(x);
+	line(400,180,430,200);
+	delay(x);
+	
+	//L
+	line(500,150,500,200);
+	delay(x);
+	line(500,200,530,200);
+	delay(x);
+	
+	//M
+	line(600,150,600,200);
+	delay(x);
+	line(600,150,630,180);
+	delay(x);
+	line(660,150,630,180);
+	delay(x);
+	line(660,150,660,200);
+	delay(x);
+	
+	
+	//3rd line
+	setcolor(2);
+	delay(x);
+	line(0,250,800,250);
+	delay(x);
+	line(0,300,800,300);
+	//N
+	setcolor(BLACK);
+	line(50,250,50,300);
+	delay(x);
+	line(50,250,90,300);
+	delay(x);
+	line(90,250,90,300);
+	delay(x);
+	
+	//O
+	circle(200,275,25);
+	delay(x);
+	
+	//P
+	line(300,250,300,300);
+	delay(x);
+	arc(300,265,-90,90,20);	
+	delay(x);
+	
+	//Q
+	circle(400,275,25);
+	delay(x);
+	arc(400,300,0,45,25);
+	delay(x);
+	
+	///R
+	line(500,250,500,300);
+	delay(x);
+	arc(500,265,-90,90,15);
+	delay(x);
+	arc(480,300,0,45,35);
+	delay(x);
+	
+	//S
+	arc(600,265,30,-90,13);
+	delay(x);
+	arc(600,290,-160,90,13);
+	delay(x);
+	
+	//T
+	line(700,250,700,300);
+	delay(x);
+	line(680,250,720,250);
+	delay(x);
+	
+	///4rd Line
+	setcolor(5);
+	delay(x);
+	line(0,350,800,350);
+	delay(x);
+	line(0,400,800,400);
+	//U
+	setcolor(BLACK);
+	line(50,350,50,380);
+	delay(x);
+	line(100,350,100,380);
+	delay(x);
+	arc(75,380,-180,0,24);
+	delay(x);
+	
+	//V
+	line(180,350,200,400);
+	delay(x);
+	line(220,350,200,400);
+	delay(x);
+	
+	//W
+	line(300,350,300,400);
+	delay(x);
+	line(330,350,300,400);
+	delay(x);
+	line(330,350,360,400);
+	delay(x);
+	line(365,350,360,400);
+	delay(x);
+	
+	///X
+	line(450,350,490,400);
+	delay(x);
+	line(490,350,450,400);
+	delay(x);
+	
+	//Y
+	line(600,380,600,400);
+	delay(x);
+	line(580,350,600,380);
+	delay(x);
+	line(620,350,600,380);
+	delay(x);
+	
+	//Z
+	line(680,350,730,350);
+	delay(x);
+	line(680,400,730,350);
+	delay(x);
+	line(680,400,730,400);
+	delay(1000);
+
+}
+int main()
+{
+	initwindow(800,800);
+	while(!kbhit())
+	{
+		setbkcolor(7);
+		loop();
+		page2();
+		delay(50);
+		cleardevice();
+	}
+	getch();
+}
+
+int page2()
+{
+	setcolor(WHITE);
+	cleardevice();
+	settextstyle(BOLD_FONT,HORIZ_DIR,5);
+	outtextxy(100,200,"Now I know my A B C");
+	outtextxy(150,300,"26 latters from"); 
+	outtextxy(230,400,"A to Z"); 
+	delay(2000);
+}
