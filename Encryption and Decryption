@@ -1,0 +1,73 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int loading()////loading function
+{
+	/*
+	*		Syed Syab Ahmad Shah
+	*		Facebook Group Name: Learn Languages
+	*		Youtube Channel: LearnToCode
+	*		Like share and Subscribe
+	*		and don't Forget to Join the group
+	*
+	*/
+	char a=219;
+	cout<<"\t\t\t\t\tEncrypting..";
+	for(int i=0;i<10;i++)
+	{
+		cout<<a;
+		Sleep(100);
+	}
+	cout<<endl;
+}
+int enc()///function for encryption
+{
+	char str[10];
+	cout<<"\t\t\t\t\tEnter 10 charectors only to encrypt"<<endl;
+	cout<<"\t\t\t\t\tType Here....: ";
+	cin>>str;////taking input from user
+	for(int i=0;(i<10 && str[i]!='\0');i++)
+	str[i] = str[i]+20/3;
+	loading();
+	cout<<"\t\t\t\t\tEncryption Key is : "<<str;////displaying input 
+	
+}
+int dec()///function for decryption
+{
+	char str[10];
+	cout<<"\t\t\t\t\tEnter 10 charectors only to decrypt"<<endl;
+	cout<<"\t\t\t\t\tType Here....: ";
+	cin>>str;
+	for(int i=0;(i<10 && str[i]!='\0');i++)
+	str[i] = str[i]-20/3;
+	loading();
+	cout<<"\t\t\t\t\tDecryption Key is : "<<str;
+}
+int main()
+{
+	int opt;
+	top:
+	cout<<"\t\t\t\t\t===================================="<<endl<<endl<<endl;
+	cout<<"\t\t\t\t\tChoose one of the following to proceed: "<<endl;
+	cout<<"\t\t\t\t\t[1] Encryption"<<endl;
+	cout<<"\t\t\t\t\t[2] Decryprion"<<endl;
+	cout<<"\t\t\t\t\tType Here....: ";
+	cin>>opt;
+	switch(opt)///switch case
+	{
+		case 1:
+			enc();
+			goto top;///for going back to manu
+		break;
+		case 2:
+			dec();
+			goto top;///for going back to manu
+		break;
+		default:///this is for whene user type incorrect input
+			cout<<"TRY AGAIN."<<endl;
+			goto top;///for going back to manu
+		break;
+	}
+	cout<<"\n\n\n\t\t\t\t\t===================================="<<endl;
+	return 0;
+}
