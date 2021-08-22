@@ -1,0 +1,36 @@
+#include <graphics.h>
+#define ScreenWidth getmaxx()
+#define ScreenHeight getmaxy()
+int Loop()
+{
+	for(int i=0;i<400;i+=10)
+	{
+		
+		int x=200;
+		setcolor(3);
+		circle(300,300,10+i);
+		delay(50);
+		setcolor(4);
+		circle(290+i,300,10+i);
+		delay(50);
+		setcolor(9);
+		circle(280-i,300,10+i);
+		delay(50);
+		setcolor(10);
+		circle(290,290+i,10+i);
+		delay(50);
+		setcolor(11);
+		circle(290,310-i,10+i);
+	}
+}
+main()
+{
+	initwindow(800,800);
+
+	for(int i=0;i<100;i++)
+	{
+		Loop();
+		cleardevice();
+	}
+	getch();
+}
