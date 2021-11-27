@@ -1,0 +1,219 @@
+#include <iostream>
+#include <graphics.h>
+#include <windows.h>
+#include <conio.h>
+@define must
+*must include <Syed Syab Ahmad Shah>
+using namespace std;
+int main()
+{
+	initwindow(800,500);
+	int x=300;
+	while(!kbhit())
+	{
+		
+		
+		setcolor(4);
+		delay(x);
+		line(10,220,30,280);//////till
+		delay(x);
+		line(30,220,10,280);//////till
+		delay(x);
+		setcolor(2);
+		line(10,250,150,250);/////tree
+		delay(x);
+		line(10,251,150,251);/////tree
+		delay(x);
+		line(10,252,150,252);/////tree
+		delay(x);
+		line(150,250,300,250);
+		delay(x);
+	
+	
+		line(220,230,260,230);
+		delay(x);
+		line(220,232,260,232);
+		delay(x);
+		line(220,228,260,228);
+		delay(x);
+		line(220,250,220,230);
+		delay(x);
+		line(221,250,221,230);
+		delay(x);
+		line(222,250,222,230);
+		delay(x);
+	
+		line(260,250,260,230);
+		delay(x);
+		line(259,250,259,230);
+		delay(x);
+		line(258,250,258,230);
+		delay(x);
+	
+		line(245,160,245,230);
+		delay(x);
+		line(244,160,244,230);//////wing
+		delay(x);
+		line(243,160,243,230);
+		delay(x);
+		line(242,160,242,230);
+		delay(x);
+		line(241,160,241,230);
+		delay(x);
+		line(240,160,240,230);
+		delay(x);
+		 
+		 
+		
+		line(150,250,200,300);
+		delay(x);
+		setcolor(4);
+		line(240,170,400,170);//////Pareee
+		delay(x);
+		line(240,171,380,150);//////Pareee
+		delay(x);
+		line(240,172,340,130);//////Pareee
+		delay(x);
+		line(240,172,300,120);//////Pareee
+		delay(x);
+		line(240,172,270,120);//////Pareee
+		delay(x);
+		line(240,172,240,120);//////Pareee
+		delay(x);
+		line(240,172,200,120);//////Pareee
+		delay(x);
+		line(240,172,160,130);//////Pareee
+		delay(x);
+		line(240,172,120,150);//////Pareee
+		delay(x);
+		line(240,172,100,170);//////Pareee
+		delay(x);
+		setcolor(2);
+		line(200,250,200,330);
+		delay(x);
+		line(300,250,300,330);
+		delay(x);
+		line(300,250,400,330);
+		delay(x);
+		
+
+		line(300,300,360,300);
+		delay(x);
+		line(200,300,360,300);
+		delay(x);
+		line(200,310,370,310);
+		delay(x);
+		line(200,320,380,320);
+		delay(x);
+		
+		line(200,330,400,330);
+		delay(x);
+		setcolor(4);
+		line(190,350,430,350);
+		delay(x);
+		line(190,350,170,310);
+		delay(x);
+		line(190,351,170,311);
+		delay(x);
+		line(190,352,170,312);
+		delay(x);
+		line(190,349,170,309);
+		delay(x);
+		line(190,348,170,308);
+		delay(x);
+		line(190,347,170,307);
+		delay(x);
+		
+		line(430,350,400,350);
+		delay(x);
+		line(430,350,400,310);
+		delay(x);
+		line(430,351,400,311);
+		delay(x);
+		line(430,352,400,312);
+		delay(x);
+		line(430,349,400,309);
+		delay(x);
+		line(430,348,400,308);
+		delay(x);
+		line(430,347,400,307);
+		delay(x);
+		setcolor(7);
+		line(350,330,350,350);///pair 1
+		delay(x);
+		line(351,330,351,350);
+		delay(x);
+		line(352,330,352,350);
+		delay(x);
+		line(353,330,353,350);
+		delay(x);
+		
+		line(330,330,330,350);///pair 2
+		delay(x);
+		line(331,330,331,350);
+		delay(x);
+		line(332,330,332,350);
+		delay(x);
+		line(333,330,333,350);
+		delay(x);
+		
+		line(240,330,240,350);///pair 3
+		delay(x);
+		line(241,330,241,350);
+		delay(x);
+		line(242,330,242,350);
+		delay(x);
+		line(243,330,243,350);
+		delay(x);
+		
+		
+		line(220,330,220,350);///pair 4
+		delay(x);
+		line(221,330,221,350);
+		delay(x);
+		line(222,330,222,350);
+		delay(x);
+		line(223,330,223,350);
+		delay(x);
+		setcolor(2);
+		outtextxy(500,200,"!Dev_SyabAhmad");
+		
+		outtextxy(500,230,"Join The Group and Do");
+		delay(x);
+		outtextxy(500,260,"Subscribe To My Channel");
+		delay(x);
+		setcolor(1);
+		outtextxy(500,290,"Facebook =>> Real CoDeR");
+		delay(x);
+		setcolor(4);
+		outtextxy(500,320,"YouTube =>> Real Coder");
+		delay(x);
+		
+		//cleardevice();
+	}
+	
+	
+	//line(300,210,300,290);
+	getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
